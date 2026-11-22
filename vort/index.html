@@ -1,0 +1,326 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Vort Dating System — ayala</title>
+<meta name="description" content="UX/UI case study: redesigning VORT, a matchmaking system that has helped over 1,600 couples build homes.">
+<link rel="stylesheet" href="vort.css">
+</head>
+<body>
+
+<div class="progress" aria-hidden="true"><span></span></div>
+
+<div class="overlay" id="overlay" aria-hidden="true">
+  <nav aria-label="Menu">
+    <a href="../#top"><small>01</small>Home</a>
+    <a href="../#about"><small>02</small>About</a>
+    <a href="../#works"><small>03</small>Works</a>
+    <a href="https://74ayalam-svg.github.io/police-rabbinate/"><small>04</small>Police Rabbinate</a>
+    <a href="../#contact"><small>05</small>Contact</a>
+  </nav>
+</div>
+
+<div class="page" id="page">
+<div class="wrap">
+
+  <!-- ============ HEADER ============ -->
+  <header class="nav">
+    <a class="logo" href="../">ayala</a>
+    <div class="nav-right">
+      <nav class="menu-pill" aria-label="Main">
+        <a href="../#top">Home</a><a href="../#about">About</a><a href="../#works">Works</a><a href="../#contact">Contact</a>
+      </nav>
+      <a class="btn-next magnetic" href="https://74ayalam-svg.github.io/police-rabbinate/"><span>Next project</span><i class="arrow">⟶</i></a>
+      <button class="burger" id="burger" aria-label="Open menu" aria-expanded="false" aria-controls="overlay"><span></span><span></span><span></span></button>
+    </div>
+  </header>
+
+  <!-- ============ HERO ============ -->
+  <div class="tags">
+    <span>UX/UI</span><span>UX Research</span><span>Web App</span><span>Desktop</span><span>Matchmaking System</span>
+  </div>
+
+  <section class="hero" id="hero">
+    <div class="hero-card">
+      <h1 class="hero-title"><span class="line"><span>Vort</span></span><span class="line"><span>Dating System</span></span></h1>
+      <p class="hero-sub r" style="--d:3">Vort has helped over 1,600 couples build homes rooted in community values.</p>
+      <div class="r" style="--d:4"><a class="hero-btn magnetic" href="#screens"><span>View the App</span></a></div>
+    </div>
+    <div class="hero-img"><div class="hero-move"><img class="lap" src="assets/hero-lap.webp" alt="" width="607" height="390"><img class="scr" src="assets/hero-scr.webp" alt="Vort home page on a laptop" width="401" height="246"></div></div>
+  </section>
+
+  <div class="meta r">
+    <div><small>Client</small><b>VORT Matchmaking</b></div>
+    <div><small>Role</small><b>UX Research · UI Design</b></div>
+    <div><small>Platform</small><b>Web · Desktop</b></div>
+    <div><small>Year</small><b>2026</b></div>
+  </div>
+
+  <section class="features">
+    <article class="feat r" style="--d:0">
+      <div class="chip"><img src="assets/icon-ask.svg" alt=""></div>
+      <span class="eyebrow">WHO</span>
+      <h3>Matchmakers &amp; families</h3>
+      <p>Over 1,000 matchmakers, community representatives, candidates and parents who use the system every day.</p>
+    </article>
+    <article class="feat r" style="--d:1">
+      <div class="chip"><img src="assets/icon-phone.svg" alt=""></div>
+      <span class="eyebrow">WHAT</span>
+      <h3>A matchmaking system</h3>
+      <p>A web platform for managing candidates, proposals, activities and engagements – from first match to mazal tov.</p>
+    </article>
+    <article class="feat r" style="--d:2">
+      <div class="chip"><img src="assets/icon-users.svg" alt=""></div>
+      <span class="eyebrow">WHY</span>
+      <h3>Less overload, more clarity</h3>
+      <p>The old system was dense and table-based. The goal: a clear, intuitive interface that makes daily work faster.</p>
+    </article>
+  </section>
+
+  <!-- ============ ABOUT ============ -->
+  <section class="about">
+    <div class="card dark logo-card r"><img src="assets/logo.webp" alt="VORT logo" width="264" height="120"></div>
+    <div class="about-text r">
+      <h2>About VORT</h2>
+      <p>VORT is a technological matchmaking platform that combines the personal, discreet guidance of over 1,000 matchmakers and community representatives. Operating under the guidance of leading rabbis, it manages a high-quality, filtered database that has helped found more than 1,600 homes – while carefully preserving the community’s values.</p>
+    </div>
+    <div class="card grey2 about-mon zoom r" style="--d:1"><img src="assets/about-monitor.webp" alt="VORT home screen on a monitor" width="323" height="556"></div>
+  </section>
+  <img class="tablet-big r" src="assets/tablet-big.webp" alt="VORT candidates screen on a tablet" width="896" height="581" loading="lazy">
+
+  <!-- ============ CHALLENGE ============ -->
+  <section class="challenge">
+    <div class="ch-head r">
+      <span class="num">01</span>
+      <h2>The challenge</h2>
+      <p>The old system had an outdated, inconvenient interface. The challenge was to turn a complex, cluttered system into a clear, organized and easy-to-use one.</p>
+    </div>
+    <div class="ch-list">
+      <div class="ch-item r"><h4>Spreadsheet-like screens</h4><p>Long, dense lists that felt like an Excel sheet, with no room for the eye to rest.</p></div>
+      <div class="ch-item r"><h4>Too many fields, no grouping</h4><p>Dozens of fields displayed together, without clear groups of information.</p></div>
+      <div class="ch-item r"><h4>A non-intuitive experience</h4><p>Inconsistent areas and crowded toolbars made the main actions hard to find.</p></div>
+      <div class="ch-item r"><h4>No visual hierarchy</h4><p>Little use of icons, color or separators – so nothing important stood out.</p></div>
+    </div>
+  </section>
+
+  <section class="problem" aria-label="Problem details in the old system">
+    <p class="watermark" data-drift="1" aria-hidden="true">Problem details</p>
+    <img class="problem-mon r" src="assets/problem-monitor.webp" alt="The old VORT system on a monitor" width="856" height="696" loading="lazy">
+    <div class="callout-layer" data-io>
+      <span class="c-line" style="left:615px;top:107px;height:30px"></span>
+      <span class="c-line" style="left:352px;top:85px;height:100px"></span>
+      <span class="c-line h" style="left:196px;top:137px;width:56px"></span>
+      <p class="callout" style="left:785px;top:0;--i:0"><b>Top bar</b> – many buttons and actions create visual clutter and make it hard to identify the main actions.</p>
+      <p class="callout" style="left:217px;top:5px;--i:1"><b>Design consistency</b> – inconsistency between different areas of the system creates a non-intuitive user experience.</p>
+      <p class="callout" style="left:495px;top:27px;--i:2"><b>Tabs area</b> – a large number of tabs without a clear hierarchy, making orientation difficult.</p>
+      <p class="callout" style="left:0;top:110px;--i:3"><b>Visual usability</b> – little use of icons, colors and visual separators increases clutter and harms readability.</p>
+      <p class="callout" style="left:886px;top:222px;--i:4"><b>The form</b> – many fields displayed together without clear grouping of information.</p>
+      <p class="callout" style="left:21px;top:318px;--i:5"><b>Screen structure</b> – a lot of information on one screen creates clutter and makes quick scanning difficult.</p>
+    </div>
+  </section>
+
+  <!-- ============ RESEARCH ============ -->
+  <section class="market">
+    <div class="sec-head r"><span class="num">02</span></div>
+    <h3 class="r" style="margin-top:8px">Market research</h3>
+    <div class="m-row">
+      <article class="m-card r" style="--d:0"><img src="assets/logo-besorot.webp" alt="Besorot Tovot logo" width="272" height="94" loading="lazy"><b>Besorot Tovot</b><p>is a platform for the Haredi community with an emphasis on dignity and conservatism</p></article>
+      <article class="m-card r" style="--d:1"><img src="assets/logo-shadchan.webp" alt="HaShadchan logo" width="272" height="88" loading="lazy"><b>HaShadchan</b><p>is a technological matchmaking platform for the community, enabling searches for matches from a high-quality database alongside guidance from experienced matchmakers.</p></article>
+      <article class="m-card r" style="--d:2"><img src="assets/logo-sheva.webp" alt="Sheva Brachot logo" width="272" height="84" loading="lazy"><b>Sheva Brachot</b><p>is a technological matchmaking platform for the Haredi and religious community</p></article>
+    </div>
+  </section>
+
+  <section class="survey">
+    <h3 class="r">User survey</h3>
+    <div class="s-row">
+      <div class="s-card donut r" data-chart style="--d:0" aria-label="Main pain points: cumbersome work 40%, information overload 30%, multiple windows 22%, no clear hierarchy 8%">
+        <svg viewBox="0 0 220 220" data-segs="40:s1,30:s2,8:s4,22:s3"></svg>
+        <div class="lbl" style="left:74px;top:52px"><b>22%</b>Multiple windows<i class="c3"></i></div>
+        <div class="lbl" style="left:237px;top:46px"><b>40%</b>Cumbersome work<i class="c1"></i></div>
+        <div class="lbl" style="left:74px;top:282px"><i class="c4" style="border:1px solid #ccc;margin:0 auto 4px"></i><b>8%</b>No clear hierarchy</div>
+        <div class="lbl" style="left:237px;top:282px"><i class="c2" style="margin:0 auto 4px"></i><b>30%</b>Information overload</div>
+      </div>
+      <div class="s-card bars r" data-chart style="--d:1" aria-label="Problems reported in the old system">
+        <div class="bar" style="--i:0"><em>42%</em><span class="c3" data-v="42"></span><small>Information display</small></div>
+        <div class="bar" style="--i:1"><em>54%</em><span class="c1" data-v="54"></span><small>Multiple windows</small></div>
+        <div class="bar" style="--i:2"><em>61%</em><span class="c2" data-v="61"></span><small>Lack of order</small></div>
+        <div class="bar" style="--i:3"><em>72%</em><span class="c3" data-v="72"></span><small>Cumbersome workflow</small></div>
+        <div class="bar" style="--i:4"><em>68%</em><span class="c1" data-v="68"></span><small>Complex navigation</small></div>
+        <div class="bar" style="--i:5"><em>62%</em><span class="c2" data-v="62"></span><small>Information overload</small></div>
+        <div class="bar" style="--i:6"><em>47%</em><span class="c3" data-v="47"></span><small>Cumbersome search</small></div>
+      </div>
+      <div class="s-card donut r" data-chart style="--d:2" aria-label="What users want: simple, fast search 33%, consolidated information 28%, fewer actions 25%, clear data organization 14%">
+        <svg viewBox="0 0 220 220" data-segs="33:s2,28:s2b,14:s3,25:s1"></svg>
+        <div class="lbl" style="left:83px;top:46px"><b>25%</b>Fewer actions<i class="c1"></i></div>
+        <div class="lbl" style="left:248px;top:46px"><b>33%</b>Simple, fast search<i class="c2"></i></div>
+        <div class="lbl" style="left:83px;top:282px"><i class="c3" style="margin:0 auto 4px"></i><b>14%</b>Clear data organization</div>
+        <div class="lbl" style="left:248px;top:282px"><b>28%</b>Consolidated information display</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ WORK PROCESS ============ -->
+  <section class="process">
+    <div class="sec-head r"><span class="num">03</span><h2>Work process</h2></div>
+    <i class="dash" data-io style="left:354px;height:346px"></i>
+    <i class="dash" data-io style="left:767px;height:454px"></i>
+    <i class="dash" data-io style="left:1179px;height:531px"></i>
+    <article class="pr-card r" style="left:0;height:278px;--d:0"><b>01</b><h4>Old system</h4><p>The client sent me all the screens of the old system. I organized them by order and logic – a slow process, since the screens were scattered and the navigation order was unclear.</p></article>
+    <article class="pr-card r" style="left:411px;min-height:339px;--d:1"><b>02</b><h4>Re-specification</h4><p>I arranged the old system into an orderly working file, then specified the new system while keeping every important detail from the original.</p></article>
+    <article class="pr-card r" style="left:821px;min-height:426px;--d:2"><b>03</b><h4>Redesign</h4><p>The client asked for colors that convey respect and conservatism, so I chose a black-and-gold palette and designed an aesthetic, dignified interface.</p></article>
+  </section>
+
+  <section class="old-card r">
+    <h3>Organizing the old system</h3>
+    <p>Every screen of the old system, mapped and grouped by flow before any design work began.</p>
+    <div class="map"><img src="assets/oldsys-map.webp" alt="Map of all old-system screens grouped by flow" width="1056" height="499" loading="lazy"></div>
+  </section>
+
+  <!-- ============ USER FLOW ============ -->
+  <section class="flow">
+    <div class="sec-head r"><span class="num">04</span><h2>User flow</h2></div>
+    <div class="flow-wrap"><img class="flow-img r" src="assets/userflow.webp" alt="User flow: login, matchmaker or candidate/parent home page, candidate search, add candidate, activity, matchmaking process, representatives, engaged, emails &amp; calls" width="1128" height="443" loading="lazy"></div>
+  </section>
+
+  <!-- ============ UX SPEC ============ -->
+  <section class="ux">
+    <div class="sec-head r"><span class="num">05</span><h2>UX specification</h2><p>I mapped the users and analyzed their workflows, defined a new navigation structure, reorganized the information and planned simpler, more efficient flows.</p></div>
+    <div class="shot ux-banner r"><img src="assets/ux-banner.webp" alt="New VORT screens on tablets" width="1168" height="612" loading="lazy"></div>
+    <div class="spec-row">
+      <div class="txt r">
+        <h3 class="h3">From tables to cards</h3>
+        <p>The old table view was replaced with a modern Card-Based Design. Information appears in clear cards alongside supporting icons – creating a clearer visual hierarchy, better scannability and intuitive, efficient navigation.</p>
+      </div>
+      <div class="shot r" style="--d:1"><img src="assets/spec-visual.webp" alt="Candidate cards on a tablet" width="608" height="520" loading="lazy"></div>
+    </div>
+  </section>
+
+  <!-- ============ BEFORE / AFTER ============ -->
+  <section class="ba" aria-label="Before and after">
+    <p class="watermark" data-drift="-1" aria-hidden="true">Before / After</p>
+    <img class="ba-laptop r" src="assets/laptop.webp" alt="" width="1083" height="634" loading="lazy">
+    <div class="ba-screen r" id="ba" role="slider" tabindex="0" aria-label="Drag to compare the old and new system" aria-valuemin="0" aria-valuemax="100" aria-valuenow="52">
+      <img class="ba-after" src="assets/ba-after.webp" alt="New VORT system" width="814" height="521" loading="lazy">
+      <div class="ba-before-wrap"><img src="assets/ba-before.webp" alt="Old system" width="420" height="521" loading="lazy"></div>
+      <div class="ba-handle"><i></i></div>
+    </div>
+    <div class="ba-tags"><span>BEFORE</span><span>DRAG TO COMPARE</span><span>AFTER</span></div>
+  </section>
+
+  <!-- ============ ADD CANDIDATE ============ -->
+  <section class="duo add">
+    <h3 class="t r" style="left:14px;top:0">Add candidate</h3>
+    <img class="add-tablet r" src="assets/add-tablet.webp" alt="New Add Candidate screen on a tablet" width="583" height="593" loading="lazy">
+    <div class="card grey2 add-card r" style="--d:1">
+      <img class="mon" src="assets/add-old-bg.webp" alt="" width="470" height="374" loading="lazy">
+      <img class="scr" src="assets/add-old-monitor.webp" alt="Old Add Candidate screen" width="415" height="238" loading="lazy">
+    </div>
+    <div class="cap r" style="left:650px;top:509px"><h4>Add Candidate – Problem</h4><p>The information is displayed in a dense table without visual hierarchy, making it hard to scan quickly and understand the candidates’ status.</p></div>
+    <div class="cap r" style="left:0;top:667px"><h4>Add Candidate – Solution</h4><p>Organized cards, filtered by process order, for a quick and comfortable understanding of the work.</p></div>
+  </section>
+
+  <!-- ============ ACTIVITY ============ -->
+  <section class="duo act">
+    <h3 class="t r" style="left:5px;top:0">Activity page</h3>
+    <img class="act-new r" src="assets/act-new.webp" alt="New Activity page on a laptop" width="541" height="418" loading="lazy">
+    <img class="act-old r" src="assets/act-old.webp" alt="Old Activity page on a laptop" width="573" height="426" style="--d:1" loading="lazy">
+    <div class="cap r" style="left:0;top:512px"><h4>Activity Page – Solution</h4><p>A design with clear cards and visual hierarchy, accessible information and actions enables fast navigation and understanding of candidates’ status, so the user can see the matchmaking process at a glance in a simple, intuitive way.</p></div>
+    <div class="cap r" style="left:601px;top:576px"><h4>Activity Page – Problem</h4><p>The interface is dense and table-like, making it hard to track candidates and understand their status quickly.</p></div>
+  </section>
+
+  <div class="card form-card r">
+    <img class="bg" src="assets/form-bg.webp" alt="" width="1167" height="672" loading="lazy">
+    <img class="mon" src="assets/form-screen.webp" alt="New Add Candidate form, step by step, with categorized cards" width="650" height="360" loading="lazy">
+    <span class="anno" style="left:420px;top:86px">Save Draft</span>
+    <span class="anno-line v" style="left:467px;top:104px;height:48px"></span>
+    <span class="anno" style="left:146px;top:163px">Form filler’s name</span>
+    <span class="anno-line" style="left:256px;top:170px;width:82px"></span>
+    <span class="anno" style="left:146px;top:322px">Cards organized by categories</span>
+    <span class="anno-line" style="left:300px;top:329px;width:142px"></span>
+    <span class="anno" style="left:218px;top:468px">Continue</span>
+    <span class="anno-line" style="left:273px;top:475px;width:71px"></span>
+  </div>
+
+  <!-- ============ DESIGN SYSTEM ============ -->
+  <section class="ds">
+    <div class="sec-head r"><span class="num">06</span><h2>Design System</h2></div>
+    <div class="ds-grid">
+      <div>
+        <div class="swatches r" id="swatches">
+          <button class="sw sw-dark" data-hex="#272727"><span>272727</span></button>
+          <button class="sw sw-mid" data-hex="#E4E4E4"><span>E4E4E4</span></button>
+          <button class="sw sw-light" data-hex="#F7F7F7"><span>F7F7F7</span></button>
+        </div>
+        <p class="icone r">icons</p>
+        <div class="icon-row r">
+          <div class="icons-card">
+            <img src="assets/icons-grid.webp" alt="VORT icon set" width="178" height="203" style="left:69px;top:39px">
+            <img src="assets/icons-col.webp" alt="" width="24" height="204" style="left:289px;top:38px">
+          </div>
+          <div class="app-icons">
+            <div class="app-icon l"><img src="assets/appicon-1.webp" alt="VORT app icon" width="45" height="52"></div>
+            <div class="app-icon d"><img src="assets/appicon-1.webp" alt="VORT app icon, dark" width="45" height="52"></div>
+          </div>
+        </div>
+      </div>
+      <div class="typo r">
+        <p class="t-label">typography</p>
+        <p class="t-big">almoni</p>
+        <p class="t-row">almoni Black · 44 · Titles</p>
+        <p class="t-row">almoni Bold · 20 · Headings</p>
+        <p class="t-row">almoni Regular · 16 · Body</p>
+        <p class="t-row">almoni SemiBold · 14 · Labels</p>
+        <p class="t-heb" dir="rtl" lang="he">אבגדהוזחטיכלמנסעפצקרשת</p>
+        <p class="t-row" style="white-space:pre">Aa Bb Cc Dd Ee Ff Gg   1234567890</p>
+      </div>
+    </div>
+    <p class="comp-label r">components</p>
+    <div class="components r">
+      <img class="full" src="assets/components.webp" alt="VORT UI components: search filters, candidate cards, matchmaker stats, tabs and status steps" width="1170" height="566" loading="lazy">
+      <img class="tabs" src="assets/components-tabs.webp" alt="" width="456" height="76" style="left:548px;top:218px" loading="lazy">
+    </div>
+  </section>
+
+  <!-- ============ SCREENS ============ -->
+  <section class="screens" id="screens">
+    <div class="sec-head r"><span class="num">07</span><h2>Screens</h2></div>
+
+    <svg class="conn" style="left:1032px;top:738px" width="96" height="112" viewBox="0 0 96 112"><path d="M0 1 H72 A23 23 0 0 1 95 24 V106"/><circle cx="95" cy="108" r="3.5"/></svg>
+    <svg class="conn" style="left:36px;top:1328px;transform:scaleX(-1)" width="96" height="112" viewBox="0 0 96 112"><path d="M0 1 H72 A23 23 0 0 1 95 24 V106"/><circle cx="95" cy="108" r="3.5"/></svg>
+    <svg class="conn" style="left:1032px;top:1934px" width="96" height="112" viewBox="0 0 96 112"><path d="M0 1 H72 A23 23 0 0 1 95 24 V106"/><circle cx="95" cy="108" r="3.5"/></svg>
+
+    <div class="scr-card r" style="left:0;top:166px"><img class="lap" src="assets/laptop.webp" alt="" width="798" height="467" loading="lazy"><img class="scr" src="assets/scr-1.webp" alt="Home page – new candidates" width="600" height="372" loading="lazy"></div>
+    <div class="scr-card r" style="left:180px;top:770px"><img class="lap" src="assets/laptop.webp" alt="" width="798" height="467" loading="lazy"><img class="scr" src="assets/scr-2.webp" alt="Add new candidate form" width="600" height="372" loading="lazy"></div>
+    <div class="scr-card r" style="left:0;top:1374px"><img class="lap" src="assets/laptop.webp" alt="" width="798" height="467" loading="lazy"><img class="scr" src="assets/scr-3.webp" alt="Activity page" width="600" height="372" loading="lazy"></div>
+    <div class="scr-card r" style="left:180px;top:1978px"><img class="lap" src="assets/laptop.webp" alt="" width="798" height="467" loading="lazy"><img class="scr" src="assets/scr-4.webp" alt="Activity saved confirmation" width="600" height="372" loading="lazy"></div>
+  </section>
+
+  <!-- ============ MOCKUPS ============ -->
+  <section class="mockups">
+    <h2 class="r">Mockups</h2>
+    <div class="mk-grid">
+      <div class="mk r"><img src="assets/mock-monitor.webp" alt="VORT on a monitor" width="772" height="577" loading="lazy"></div>
+      <div class="mk-col">
+        <div class="mk mk-phone r" style="--d:1"><img src="assets/mock-phone.webp" alt="VORT app icon on a phone" width="162" height="205" loading="lazy"></div>
+        <div class="mk r" style="--d:2"><img src="assets/mock-laptop.webp" alt="VORT home page on a laptop" width="365" height="320" loading="lazy"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ NEXT ============ -->
+  <section class="next r">
+    <div>
+      <small>NEXT PROJECT</small>
+      <a class="big" href="https://74ayalam-svg.github.io/police-rabbinate/">Police Rabbinate App <span aria-hidden="true">⟶</span></a>
+    </div>
+    <a class="back" href="../#works">← All works</a>
+  </section>
+
+</div>
+</div>
+
+<div class="toast" id="toast">Copied</div>
+<script src="vort.js"></script>
+</body>
+</html>

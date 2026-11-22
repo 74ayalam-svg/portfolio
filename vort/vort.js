@@ -24,19 +24,6 @@
   (document.fonts ? document.fonts.ready : Promise.resolve()).then(start);
   setTimeout(start, 1200);
 
-  /* ---------- menu ---------- */
-  const burger = $('#burger'), overlay = $('#overlay');
-  function setMenu(open) {
-    document.body.classList.toggle('menu-open', open);
-    burger.setAttribute('aria-expanded', String(open));
-    burger.setAttribute('aria-label', open ? 'Close menu' : 'Open menu');
-    overlay.setAttribute('aria-hidden', String(!open));
-    document.body.style.overflow = open ? 'hidden' : '';
-  }
-  burger.addEventListener('click', () => setMenu(!document.body.classList.contains('menu-open')));
-  overlay.addEventListener('click', (e) => { if (e.target.closest('a')) setMenu(false); });
-  addEventListener('keydown', (e) => { if (e.key === 'Escape') setMenu(false); });
-
   /* ---------- charts ---------- */
   const C = 2 * Math.PI * 80;
   $$('svg[data-segs]').forEach(svg => {

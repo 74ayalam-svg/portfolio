@@ -5,36 +5,45 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Vort Dating System — ayala</title>
 <meta name="description" content="UX/UI case study: redesigning VORT, a matchmaking system that has helped over 1,600 couples build homes.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lexend:wght@300;400&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="vort.css">
+<link rel="stylesheet" href="site-header.css">
 </head>
 <body>
 
 <div class="progress" aria-hidden="true"><span></span></div>
 
-<div class="overlay" id="overlay" aria-hidden="true">
+<header class="sh" id="header">
+  <div class="sh-row">
+    <a class="sh-logo" href="../" aria-label="Ayala – home">Ayala<span>.</span></a>
+    <nav class="sh-nav" aria-label="Main">
+      <a href="../">Home</a>
+      <a href="../#about">About</a>
+      <a href="../#works">Works</a>
+      <a href="../#services">Services</a>
+      <a href="../#contact">Contact</a>
+    </nav>
+    <div class="sh-actions">
+      <button class="sh-menu" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="sh-overlay"><span></span><span></span></button>
+      <a class="sh-pill" href="../#contact">Let’s chat <span class="sh-wave" aria-hidden="true">👋</span></a>
+    </div>
+  </div>
+</header>
+
+<div class="sh-overlay" id="sh-overlay" hidden>
   <nav aria-label="Menu">
-    <a href="../#top"><small>01</small>Home</a>
+    <a href="../"><small>01</small>Home</a>
     <a href="../#about"><small>02</small>About</a>
     <a href="../#works"><small>03</small>Works</a>
-    <a href="https://74ayalam-svg.github.io/police-rabbinate/"><small>04</small>Police Rabbinate</a>
+    <a href="../#services"><small>04</small>Services</a>
     <a href="../#contact"><small>05</small>Contact</a>
   </nav>
 </div>
 
 <div class="page" id="page">
 <div class="wrap">
-
-  <!-- ============ HEADER ============ -->
-  <header class="nav">
-    <a class="logo" href="../">ayala</a>
-    <div class="nav-right">
-      <nav class="menu-pill" aria-label="Main">
-        <a href="../#top">Home</a><a href="../#about">About</a><a href="../#works">Works</a><a href="../#contact">Contact</a>
-      </nav>
-      <a class="btn-next magnetic" href="https://74ayalam-svg.github.io/police-rabbinate/"><span>Next project</span><i class="arrow">⟶</i></a>
-      <button class="burger" id="burger" aria-label="Open menu" aria-expanded="false" aria-controls="overlay"><span></span><span></span><span></span></button>
-    </div>
-  </header>
 
   <!-- ============ HERO ============ -->
   <div class="tags">
@@ -321,6 +330,7 @@
 </div>
 
 <div class="toast" id="toast">Copied</div>
+<script src="site-header.js"></script>
 <script src="vort.js"></script>
 </body>
 </html>

@@ -40,38 +40,8 @@ button{font:inherit;border:0;background:none;cursor:pointer;color:inherit}
 .r.in{animation:rv 1s var(--ease) calc(var(--d,0) * 90ms) both}
 @keyframes rv{from{opacity:0;translate:0 34px}to{opacity:1;translate:0 0}}
 
-/* ============ header ============ */
-.nav{display:flex;justify-content:space-between;align-items:center;padding-top:42px;height:91px;position:relative;z-index:20}
-.logo{font-size:36px;line-height:1.154;font-weight:400;letter-spacing:-.2px;margin-top:3px;transition:letter-spacing .4s var(--ease)}
-.logo:hover{letter-spacing:1px}
-.nav-right{display:flex;align-items:center}
-.menu-pill{display:flex;gap:28px;align-items:center;height:41px;padding:8px 28px;border:1px solid rgba(20,20,20,.08);border-radius:100px;font-size:16px;font-weight:500;color:#141414;margin-top:4px}
-.menu-pill a{position:relative;line-height:24px}
-.menu-pill a::after{content:"";position:absolute;left:0;right:0;bottom:-1px;height:1.5px;background:var(--ink);transform:scaleX(0);transform-origin:right;transition:transform .35s var(--ease)}
-.menu-pill a:hover::after{transform:scaleX(1);transform-origin:left}
-.btn-next{margin-left:12px;display:inline-flex;align-items:center;gap:8px;height:49px;padding:0 22px;border-radius:100px;background:#141414;color:#fff;font-size:16px;font-weight:500;transition:background .3s}
-.btn-next:hover{background:var(--gold)}
-.btn-next .arrow{font-style:normal;transition:transform .35s var(--ease)}
-.btn-next:hover .arrow{transform:translateX(5px)}
-.burger{margin-left:33px;width:30px;height:30px;display:flex;flex-direction:column;justify-content:center;gap:5.5px;padding:0 3.75px;position:relative;z-index:31}
-.burger span{height:1.5px;background:#292d32;border-radius:2px;transition:transform .35s var(--ease),opacity .3s,background .3s}
-.burger:hover span:nth-child(1){transform:translateX(-3px)}
-.burger:hover span:nth-child(3){transform:translateX(3px)}
-.menu-open .burger span{background:#fff}
-.menu-open .burger span:nth-child(1){transform:translateY(7px) rotate(45deg)}
-.menu-open .burger span:nth-child(2){opacity:0}
-.menu-open .burger span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
-
-/* overlay menu */
-.overlay{position:fixed;inset:0;z-index:30;background:var(--dark);color:#fff;display:flex;align-items:center;justify-content:center;opacity:0;visibility:hidden;transition:opacity .45s var(--ease),visibility 0s .45s}
-.menu-open .overlay{opacity:1;visibility:visible;transition:opacity .45s var(--ease)}
-.overlay nav{display:flex;flex-direction:column;gap:14px;text-align:center}
-.overlay a{font-size:52px;font-weight:600;line-height:1.15;opacity:.55;transition:opacity .3s}
-.overlay a:hover{opacity:1}
-.overlay small{display:block;font-size:14px;letter-spacing:2px;color:var(--muted);margin-bottom:6px}
-
 /* ============ hero ============ */
-.tags{display:flex;gap:8px;margin-top:155px}
+.tags{display:flex;gap:8px;margin-top:158px}
 .tags span{background:#f3f3f1;border-radius:100px;padding:8px 14px;font-size:13px;font-weight:500;color:#333;line-height:17px;transition:background .3s,color .3s}
 .tags span:hover{background:var(--ink);color:#fff}
 .hero{position:relative;margin-top:31px;margin-left:-1px;width:1169px;height:549px}
@@ -335,11 +305,6 @@ button{font:inherit;border:0;background:none;cursor:pointer;color:inherit}
 @media (max-width:899px){
   .page{width:auto;zoom:1;padding:0 16px 48px}
   .wrap{width:auto;max-width:560px}
-  .nav{padding-top:20px;height:auto}
-  .logo{font-size:30px}
-  .menu-pill,.btn-next{display:none}
-  .burger{margin-left:0}
-  .overlay a{font-size:38px}
   .tags{flex-wrap:wrap;margin-top:40px}
   .hero{width:auto;height:auto;margin:20px 0 0}
   .hero-card{position:relative;inset:auto;border-radius:36px;padding:40px 28px 250px}

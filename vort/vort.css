@@ -278,7 +278,7 @@ button{font:inherit;border:0;background:none;cursor:pointer;color:inherit}
 .mac-scr{display:block;width:100%;height:auto;border-radius:5px}
 .mac-base{position:relative;width:calc(100% + 96px);margin-left:-48px;height:17px;background:linear-gradient(#f1f2f4,#c9ccd1 55%,#9a9ea4);border-radius:3px 3px 16px 16px;box-shadow:0 22px 30px -18px rgba(0,0,0,.45)}
 .mac-base i{position:absolute;left:50%;top:0;width:130px;height:7px;margin-left:-65px;background:linear-gradient(#bfc2c7,#a4a8ae);border-radius:0 0 9px 9px}
-.conn{position:absolute;overflow:visible}
+.conn{position:absolute;overflow:visible;z-index:2}
 .conn path{stroke:#8a8a8a;stroke-width:1.5;stroke-dasharray:4 4;fill:none}
 .conn circle{fill:#8a8a8a}
 .conn{-webkit-mask:linear-gradient(90deg,#000 50%,transparent 50%) 100% 0/200% 100% no-repeat;mask:linear-gradient(90deg,#000 50%,transparent 50%) 100% 0/200% 100% no-repeat;transition:-webkit-mask-position 1.4s var(--ease),mask-position 1.4s var(--ease)}

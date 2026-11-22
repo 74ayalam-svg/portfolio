@@ -268,11 +268,16 @@ button{font:inherit;border:0;background:none;cursor:pointer;color:inherit}
 
 /* ============ screens ============ */
 .screens{position:relative;margin-top:188px;height:2524px}
-.scr-card{position:absolute;width:989px;height:546px;border-radius:55px;background:var(--grey);overflow:hidden}
-.scr-card .lap{position:absolute;left:96px;top:40px;width:798px}
-.scr-card .scr{position:absolute;left:204px;top:80px;width:600px;height:372px;object-fit:cover;object-position:top;transition:transform .8s var(--ease)}
-.scr-card:hover .scr,.scr-card:hover .lap{transform:translateY(-6px)}
-.scr-card .lap{transition:transform .8s var(--ease)}
+.scr-card{position:absolute;width:989px;height:546px;border-radius:55px;background:var(--grey);overflow:hidden;display:flex;align-items:center;justify-content:center}
+/* laptop mockup built in CSS: the screen image sets the lid height, so nothing is cropped */
+.mac{width:690px;transition:transform .8s var(--ease)}
+.scr-card:hover .mac{transform:translateY(-6px)}
+.mac-lid{position:relative;background:#0e0e0f;border-radius:24px 24px 8px 8px;padding:16px 16px 22px;box-shadow:inset 0 0 0 1.5px #3a3b3d,0 0 0 2px #c4c7cc}
+.mac-cam{position:absolute;left:50%;top:0;width:96px;height:14px;margin-left:-48px;background:#0e0e0f;border-radius:0 0 9px 9px;z-index:2}
+.mac-cam::after{content:"";position:absolute;left:50%;top:4px;width:5px;height:5px;margin-left:-2.5px;border-radius:50%;background:#1f2a33}
+.mac-scr{display:block;width:100%;height:auto;border-radius:5px}
+.mac-base{position:relative;width:calc(100% + 96px);margin-left:-48px;height:17px;background:linear-gradient(#f1f2f4,#c9ccd1 55%,#9a9ea4);border-radius:3px 3px 16px 16px;box-shadow:0 22px 30px -18px rgba(0,0,0,.45)}
+.mac-base i{position:absolute;left:50%;top:0;width:130px;height:7px;margin-left:-65px;background:linear-gradient(#bfc2c7,#a4a8ae);border-radius:0 0 9px 9px}
 .conn{position:absolute;overflow:visible}
 .conn path{stroke:#8a8a8a;stroke-width:1.5;stroke-dasharray:4 4;fill:none}
 .conn circle{fill:#8a8a8a}
@@ -385,8 +390,12 @@ button{font:inherit;border:0;background:none;cursor:pointer;color:inherit}
   .screens{height:auto;margin-top:72px;display:flex;flex-direction:column;gap:16px}
   .screens .sec-head{margin-bottom:8px}
   .scr-card{position:relative;left:auto!important;top:auto!important;width:100%;height:auto;aspect-ratio:989/546}
-  .scr-card .lap{left:9.7%;top:7.3%;width:80.7%}
-  .scr-card .scr{left:20.6%;top:14.7%;width:60.7%;height:auto;aspect-ratio:600/372}
+  .mac{width:74%}
+  .mac-lid{padding:6px 6px 9px;border-radius:12px 12px 4px 4px}
+  .mac-cam{width:40px;height:6px;margin-left:-20px}
+  .mac-cam::after{display:none}
+  .mac-base{width:calc(100% + 36px);margin-left:-18px;height:8px}
+  .mac-base i{width:52px;height:3px;margin-left:-26px}
   .conn{display:none}
   .mk-grid{grid-template-columns:1fr;row-gap:16px}
   .mk-phone{height:auto;aspect-ratio:365/233}

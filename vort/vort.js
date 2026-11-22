@@ -2,19 +2,22 @@
   const $ = (s, r = document) => r.querySelector(s);
   const $$ = (s, r = document) => [...r.querySelectorAll(s)];
   const reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
-  const isMobile = () => innerWidth < 900;
+  const mq = matchMedia('(max-width: 899px)');
+  const isMobile = () => mq.matches;
 
   /* ---------- fit the 1440 canvas ---------- */
-  const ba = $('#ba');
+  const ba = $('#ba'), baMac = $('.ba-mac');
   function fit() {
-    const z = isMobile() ? 1 : Math.min(1, innerWidth / 1440);
+    const z = isMobile() ? 1 : Math.min(1, document.documentElement.clientWidth / 1440);
     document.documentElement.style.setProperty('--z', z);
-    // the before/after screen keeps its 814px geometry; scale it to fit on phones
+    // the before/after laptop keeps its desktop geometry; scale it to fit on phones
+    // (930 = 834px lid + the base sticking out 48px on each side)
     if (isMobile()) {
-      const s = ba.parentElement.clientWidth / 814;
-      ba.style.transform = `scale(${s})`;
-      ba.style.marginBottom = `${-521 * (1 - s)}px`;
-    } else { ba.style.transform = ''; ba.style.marginBottom = ''; }
+      const s = baMac.parentElement.clientWidth / 930;
+      baMac.style.transform = `scale(${s})`;
+      baMac.style.marginLeft = `${48 * s}px`;
+      baMac.style.marginBottom = `${-baMac.offsetHeight * (1 - s)}px`;
+    } else { baMac.style.transform = ''; baMac.style.marginLeft = ''; baMac.style.marginBottom = ''; }
   }
   fit();
   addEventListener('resize', fit);
@@ -111,8 +114,8 @@
   });
 
   /* ---------- before / after ---------- */
-  // the old screenshot covers the left 420px of the 814px screen
-  const MAX = 420, W = 814;
+  // the old screenshot covers the left 414px of the 802px screen
+  const MAX = 414, W = 802;
   const setX = (x) => {
     x = Math.max(0, Math.min(MAX, x));
     ba.style.setProperty('--x', x + 'px');

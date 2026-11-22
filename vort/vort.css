@@ -194,20 +194,20 @@ button{font:inherit;border:0;background:none;cursor:pointer;color:inherit}
 .spec-row .shot{width:608px}
 
 /* ============ before / after ============ */
-.ba{position:relative;margin-top:65px;height:780px}
+.ba{position:relative;margin-top:65px;height:790px}
 .ba .watermark{left:-43px;top:0;font-size:200px}
-.ba-laptop{position:absolute;left:43px;top:134px;width:1083px}
-.ba-screen{position:absolute;left:190px;top:188px;width:814px;height:521px;overflow:hidden;touch-action:none;cursor:ew-resize}
-.ba-screen>img{position:absolute;left:0;top:0;height:521px;user-select:none;-webkit-user-drag:none;pointer-events:none}
-.ba-after{width:814px}
-.ba-before-wrap{position:absolute;inset:0;clip-path:inset(0 calc(100% - var(--x,420px)) 0 0)}
-.ba-before-wrap img{width:420px;height:521px;pointer-events:none}
-.ba-handle{position:absolute;top:0;bottom:0;left:var(--x,420px);width:0;border-left:2px solid #151515;pointer-events:none}
+.mac.ba-mac{position:absolute;left:167px;top:160px;width:834px}
+.ba-screen{position:relative;width:802px;height:509px;overflow:hidden;border-radius:5px;touch-action:none;cursor:ew-resize;background:#fff}
+.ba-screen>img{position:absolute;left:0;top:0;height:509px;user-select:none;-webkit-user-drag:none;pointer-events:none}
+.ba-after{width:802px}
+.ba-before-wrap{position:absolute;inset:0;clip-path:inset(0 calc(100% - var(--x,414px)) 0 0)}
+.ba-before-wrap img{width:414px;height:509px;pointer-events:none}
+.ba-handle{position:absolute;top:0;bottom:0;left:var(--x,414px);width:0;border-left:2px solid #151515;pointer-events:none}
 .ba-handle i{position:absolute;top:50%;left:-17px;width:32px;height:32px;margin-top:-16px;border-radius:50%;background:#151515;box-shadow:0 6px 16px rgba(0,0,0,.35)}
 .ba-handle i::before,.ba-handle i::after{content:"";position:absolute;top:11px;border:5px solid transparent}
 .ba-handle i::before{left:3px;border-right-color:#fff}
 .ba-handle i::after{right:3px;border-left-color:#fff}
-.ba-tags{position:absolute;left:190px;top:724px;width:814px;display:flex;justify-content:space-between;font-size:14px;font-weight:600;letter-spacing:1.4px;color:var(--muted)}
+.ba-tags{position:absolute;left:183px;top:748px;width:802px;display:flex;justify-content:space-between;font-size:14px;font-weight:600;letter-spacing:1.4px;color:var(--muted)}
 
 /* ============ add candidate / activity ============ */
 .duo{position:relative}
@@ -358,9 +358,13 @@ button{font:inherit;border:0;background:none;cursor:pointer;color:inherit}
   .flow-img{width:900px;max-width:none;margin-top:32px}
   .spec-row{flex-direction:column;gap:20px}
   .spec-row .txt,.spec-row .shot{width:100%}
-  .ba{height:auto;margin-top:56px}
-  .ba .watermark,.ba-laptop{display:none}
-  .ba-screen{position:relative;left:auto;top:auto;width:814px;transform-origin:0 0}
+  .ba{height:auto;margin-top:56px;overflow:hidden}
+  .ba .watermark{display:none}
+  .mac.ba-mac{position:relative;left:auto;top:auto;width:834px;margin-left:48px;transform-origin:0 0;transition:none}
+  .mac.ba-mac .mac-lid{padding:16px 16px 22px;border-radius:24px 24px 8px 8px}
+  .mac.ba-mac .mac-cam{width:96px;height:14px;margin-left:-48px}
+  .mac.ba-mac .mac-base{width:calc(100% + 96px);margin-left:-48px;height:17px}
+  .mac.ba-mac .mac-base i{width:130px;height:7px;margin-left:-65px}
   .ba-tags{position:static;width:auto;margin-top:12px}
   .duo{height:auto!important;margin-top:56px!important;display:flex;flex-direction:column;gap:16px}
   .duo>*{position:static!important;width:100%!important}
